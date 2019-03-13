@@ -1,0 +1,124 @@
+<!--website RadioGaGa-->
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="responsive.css">
+    <meta charset="UTF-8">
+    <meta name="robots" content="all">
+    <meta name="language" content="Dutch">
+    <meta name="author" content="Krishan">
+    <meta name="description" content="RadioGaGa marketing">
+    <meta name="keywords" content="RadioGaGa, muziek, playlist">
+    <meta name="copyright" content="copyright">
+    <title>RadioGaGa</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="playlist.html">Playlist</a></li>
+            <li><a href="formulier.html">Formulier</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <div id="Logo">
+    </div>
+    <main>
+        <div id="multimedia">
+                <div id="album-1" style="display: block">
+                    <video controls width="80%" preload poster="album-1.jpg">
+                        <source src="trailer.webm" type="video/webm">
+                        <source src="trailer.ogv" type="video/ogg">
+                        <source src="trailer.mpv" type="video/mp4">
+                    </video>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Track</th><th>Titel</th><th>Tijd</th><th>Play</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Titel 1</td>
+                                <td>02:08</td>
+                                <td>
+                            <a onclick="
+                            document.getElementById('audio').src='2121.mp3';
+                            v=document.getElementById('audio');
+                            v.play();">|></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Titel 2</td>
+                                <td>03:18</td>
+                                <td>
+                            <a onclick="
+                            document.getElementById('audio').src='2121.mp3';
+                            v=document.getElementById('audio');
+                            v.play();">|></a> 
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Titel 3</td>
+                                <td>02:08</td>
+                                <td>
+                            <a onclick="
+                            document.getElementById('audio').src='2121.mp3';
+                            v=document.getElementById('audio');
+                            v.play();">|></a> 
+                                </td>
+                           </tr>
+                        </tbody>
+                    </table>
+                    <audio style="display: block" id="audio" src="2121.mp3" controls>
+                    </audio>
+                    </div><!--einde album-1-->
+                    <div id="album-2" style="display: none">
+                    
+                    </div><!--einde album-2-->
+                    <div id="album-3" style="display: none">
+                    
+                    </div><!--einde album-3-->
+                    </div><!--einde multimedia-->
+                    
+        <div id="albums">
+            <ul>
+                <li>
+                    <a onclick=
+                    "document.getElementById('album-1').style.display='block';
+                     document.getEelementById('album-2').style.display='none';
+                     document.getEelementById('album-3').style.display='none';"> 
+                        <img src="album-1.jpg"></a>
+                </li>
+                <li>
+                    <a onclick=
+                    "document.getElementById('album-1').style.display='none';
+                     document.getEelementById('album-2').style.display='block';
+                     document.getEelementById('album-3').style.display='none';"> 
+                        <img src="album-2.jpg"></a>
+                </li>
+                <li>
+                    <a onclick=
+                    "document.getElementById('album-1').style.display='none';
+                     document.getEelementById('album-2').style.display='none';
+                     document.getEelementById('album-3').style.display='block';"> 
+                        <img src="album-3.jpg"></a>
+                </li>
+            </ul>  
+            </div> <!--einde album-->>
+        </div>
+    </main>
+    <br>
+    <footer>
+        <a href="#top"><img src="twitter.png" alt="x" ></a>
+        <a href="#top"><img src="youtube.png" alt="x" ></a>
+        <a href="#top"><img src="facebook.png" alt="x" ></a>
+        <p>Copyright &copy; 2019 <i>Ontworpen door:Krishan Bhugwansing</i>
+            Alle rechten voorbehouden.</p>
+    </footer>
+</body>
+</html>

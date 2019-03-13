@@ -1,0 +1,36 @@
+.border{
+    border: 2px solid #000;
+    
+}
+
+.rood1{
+   background-color: #FE0000;
+}
+
+.rood2{
+   background-color: #FF9C00;
+}
+
+.rood3{
+   background-color: #F5FF00;
+}
+
+.rood4{
+   background-color: #3CF10E;
+}
+
+.roze1{
+   background-color: #01FFE5;
+}
+
+.roze2{
+   background-color: #0024FF;
+}
+
+.roze3{
+   background-color: #C500FF;
+}
+
+.roze4{
+   background-color: #FF009C;
+}

@@ -1,0 +1,68 @@
+/* mx 900px (tablets) */
+@media only screen
+and (max-width: 900px){
+    body{
+        max-width: 900px;
+    }
+    main{
+        background-color: #97D0AC;
+    }
+    nav ul li a{
+        font-size: 1.2rem;
+    }
+    #logo{
+        margin-top: 35px;
+        padding-top: 10%;
+        background-size: 50% 50%;
+    }
+    #album{
+        width: 100%;
+        padding-left: 5%;
+        float: left;
+    }
+    #album ul li img{
+        width: 18%;
+        margin-top: 3%;
+        margin-left: 7%;
+        margin-bottom: 5%;
+        float: left;
+    }
+    #multimedia{
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+    }
+}
+
+@media only screen
+and (max-width: 600px){
+    
+    body{
+        max-width: 600px;
+    }
+    main{
+        background-color: #d4808b;
+    }
+    
+    table th{
+        font-size: 0.8rem;
+    }
+    table td{
+        font-size: 0.8rem;
+    }
+} 
+
+@media only screen
+and (max-width: 480px){
+    
+    body{
+        max-width: 480px;
+    }
+    main{
+        background-color: #ff4e00;
+    }
+    nav ul li{
+        float: none;
+        width: 100%;
+    }
+}

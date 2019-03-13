@@ -1,0 +1,86 @@
+<!--website RadioGaGa-->
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="responsive.css">
+    <meta charset="UTF-8">
+    <meta name="robots" content="all">
+    <meta name="language" content="Dutch">
+    <meta name="author" content="Krishan">
+    <meta name="description" content="RadioGaGa marketing">
+    <meta name="keywords" content="RadioGaGa, muziek, playlist">
+    <meta name="copyright" content="copyright">
+    <title>RadioGaGa</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="playlist.html">Playlist</a></li>
+            <li><a href="formulier.html">Formulier</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <div id="Logo">
+    </div>
+    <main>
+       <form name="formulier"
+           action="mailto: postmaster@radiogaga.com"
+           methode="post">
+           <fieldset>
+               <legend>Bestel gratis kaarten</legend>
+               
+               <input required type="text" id="naam"
+                   name="naam" placeholder="Naam"><br>
+               <input required type="email" id="email"
+                    name="email" placeholder="E-mail"><br>
+               <input required type="text" id="mobiel"
+                    name="mobiel" placeholder="Mobiel"><br>
+               <input required type="text" placeholder="Woonplaats" name="woonplaats"
+                       id="woonplaats" list="steden"><br>
+                    <datalist id="steden">
+                        <option value="Amsterdam">
+                        <option value="Utrecht">
+                        <option value="Antwerpen">
+                        <option value="Apeldoorn">
+                        <option value="Brussel">
+                        <option value="Rotterdam">
+                    </datalist>
+                    <select required naam="concerten" id="concerten">
+                    <option value="0">Kies een concert</option>
+                    <option value="Manu Chau">Manu Choau</option>
+                    <option value="Evanescence">Evanscence</option>
+                    <option value="Sade">Sade</option>
+                   </select>
+               <label for="datum">Geboortedatum: </label><br>
+               <input required type="date" name="datum" id="datum"><br>
+               <label for="geslacht"> Geslacht: </label>
+                Man<input type="radio" name="geslacht" value="M">
+                Vrouw<input type="radio" name="geslacht" value="V">
+                   <br>
+                <textarea placeholder="Schrijf een commentaar..."></textarea><br> 
+                <label for="abonnementen">Gratis abonnementen</label><br>
+                Nieuwsbrief:
+                <input type="checkbox" name="nieuwsbrief"
+                            id="nieuwsbrief" value="nieuwsbrief"><br>
+                Concertagenda:
+                <input type="checkbox" name="agenda"
+                            id="agenda" value="agenda"><br>
+               <label for="ranking">Album Ranking</label>  
+               <input type="range" name="ranking" id="ranking" min="1" max="5">    
+           </fieldset>
+           <input type="submit" id="verzenden"
+           name="verzend" value="Verzend">
+        </form>
+    </main>
+    <br>
+    <footer>
+        <a href="#top"><img src="twitter.png" alt="x" ></a>
+        <a href="#top"><img src="youtube.png" alt="x" ></a>
+        <a href="#top"><img src="facebook.png" alt="x" ></a>
+        <p>Copyright &copy; 2019 <i>Ontworpen door:Krishan Bhugwansing</i>
+            Alle rechten voorbehouden.</p>
+    </footer>
+</body>
+</html>

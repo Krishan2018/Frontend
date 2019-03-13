@@ -1,0 +1,48 @@
+.border{
+    border: 2px solid #000;
+    
+}
+
+.rood1{
+   background-color: rgba(255,0,0,1.0);
+}
+
+.rood2{
+   background-color: rgba(255,0,0,0.9);
+}
+
+.rood3{
+   background-color: RGBA(255,0,0,0.8);
+}
+
+.rood4{
+   background-color: rgba(255,0,0,0.7);
+}
+
+.roze1{
+   background-color: rgba(255,0,0,0.6);
+}
+
+.roze2{
+   background-color: rgba(255,0,0,0.5);
+}
+
+.roze3{
+   background-color: rgba(255,0,0,0.4);
+}
+
+.roze4{
+   background-color: rgba(255,0,0,0.3);
+}
+
+.roze5{
+   background-color: rgba(255,0,0,0.2);
+}
+
+.roze6{
+   background-color: rgba(255,0,0,0.1);
+}
+
+.wit{
+   background-color: rgba(255,0,0,0.0);
+}

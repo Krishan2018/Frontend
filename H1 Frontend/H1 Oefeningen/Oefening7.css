@@ -1,0 +1,26 @@
+.border{
+    border: 2px solid #000;
+    
+}
+
+.zwart{
+   background-color: #000;
+    color: #fff;
+    
+}
+
+.rood{
+    background-color: #f00;
+}
+
+.groen{
+   background-color: #0f0; 
+}
+
+.blauw{
+ background-color: #00f;   
+}
+
+.wit{
+  background-color: #fff;
+}
