@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab 01</title>
+    <!--dit script werkt met variabelen
+    auteur: Krishan Bhugwansing
+    datum: 05-03-2019
+    -->
+</head>
+<body>
+    <h2>Lab 01</h2>
+    <h3>Factuur</h3>
+    <script>
+        var klantnaam = prompt("voer je eigen naam in");
+        var aantal =
+        parseInt(promt("aantal boeken te bestellen?"));
+        var titel = "JavaScript";
+        var prijs = 29.90;
+        document.write(
+            "<br>Bedankt voor e bestelling: " + klantnaam);
+        document.write("<br>Boektitel is: " + titel);
+        document.write("<br>Aantal te bestellen: " + aantal);
+        document.write("<br>Prijs per boek is: " + prijs.toFixed(2));
+    </script>
+</body>
+</html>
