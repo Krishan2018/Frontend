@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>Objecten</title>
+</head>
+<body>
+    <script>
+        var laptop = [];
+        laptop['macbook'] =
+        {'model':'air', 'voorraad': 2000,'prijs': 1090};
+        document.write(
+        '<br>Opgave 42: Laptop array aangemaakt');
+        
+        laptop['asusbook'] =
+        {'model': 'wind', 'voorrad': 1000, 'prijs': 990};
+        laptop['dellbook'] =
+        {'model: fire', 'voorraad': 987, 'prijs': 890};
+        document.write('<br>Opgave 43: Laptop array uitgebreid');
+        
+        document.write(
+        '<br>Opgave 44: De laptops array heeft '+ 
+        laptop.length + 'elementen');
+        
+        var mac = 'macbook' in laptops;
+        var asus = 'asusbook' in laptop;
+        var dell = 'dellbook' in laptop;
+        document.write(
+        '<br>Opgave 45: De variabele mac is: ' + mac);
+        docuemnt.write(
+        '<br>Mac specificaties------- ' + 
+        '<br>Model: ' + laptops['macbook']['model'] +
+        '<br>Voorraad: ' +laptop['macbook']['voorraad'] + 
+        '<br> ' + laptops['macbook']['prijs']);
+        
+        
+        
+    </script>>
+</body>
+</html>
