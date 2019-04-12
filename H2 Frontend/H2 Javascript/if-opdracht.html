@@ -1,40 +1,44 @@
 <!DOCTYPE html>
 <html lang="nl">
+
 <head>
     <meta charset="UTF-8">
     <title>if-opdracht</title>
 </head>
+
 <body>
     <script>
         doorgaan = confirm('Opgave 52: Doorgaan?');
-        if(doorgaan == true){
+        if (doorgaan == true) {
             alert('Welkom bij de if-opdracht');
         }
-        if(doorgan == true){
+        if (doorgaan == true) {
             alert('Opgave 53: Klik op OK om te beginnen');
         } else {
             alert('Tot ziens');
         }
-        if(doorgaan == true){
+        //Opdracht54
+        if (doorgaan == true) {
             leeftijd = parseInt(prompt('Wat is je leeftijd'));
-            if(leeftijd < 17){
+            if (leeftijd < 17) {
                 leerplicht = true;
-            } else{
+            } else {
                 leerplicht = false;
             }
             gediplomeerd = confirm('Heb je je diploma behaaald?');
-            if(leerplicht && !gediplomeerd) {
+            if (leerplicht && !gediplomeerd) {
                 alert('Doorstuderen!');
             }
-            if(!leerplicht $$ !gediplomeerd){
+            if (!leerplicht $$!gediplomeerd) {
                 alert('Je bent niet leerplichtin EN niet gediplomeerd');
             }
-            if(gediplomeerd || !leerplicht) {
+            if (gediplomeerd || !leerplicht) {
                 alert(
-                'Je bent gediplomeerd OF niet leerplichtig OF allebei');
+                    'Je bent gediplomeerd OF niet leerplichtig OF allebei');
             }
         }
-        
+
     </script>
 </body>
+
 </html>
