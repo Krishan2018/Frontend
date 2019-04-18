@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM event</title>
+    <script src="dom-event.js"></script>
+    <script>
+        document.write('<from name="klok"> ' + '<input type="text" ' + 'name="display" '+ 'size="8" '+ 
+                      'stye="background-color: #30CE28; font-size: 44px" >' + '</from>');
+        var nu = new Date();
+        var uur = nu.getHours();
+        var min = nu.getMinutes();
+        var alterneren = 0;
+        function showlok() {
+            min=((min < 10) ? '0': '') + min;
+            if(alterneren) {
+                document.klok.display.value=uur + ':' + min;
+                alterneren = 0;
+            } else {
+                document.klok.display.value=uur + ' ' + min;
+                alterneren = 1;
+            }
+            nu = new Date(); uur = nu.getHours(); min = nu.getMinutes();
+            setTimeout('showklok()',1000);
+        }
+    </script>
+</head>
+<body onload="showlok();">
+    <div>
+        <a href="Javascript: showMedia();">
+        <img src="ipad.jpg" id="media"
+        onmouseover="this.width=this.width*1.5" onmouseout="this.width=this.width/1.5">
+        </a>
+        <label for="man">Man: </label>
+        <input type="radio" name="geslacht" id="man" value="m" onchange="
+        if(document.custform.man.checked == true) {
+            alert('Welkom meneer!');
+        }">
+        <label for="vrouw">Vrouw: </label>
+        <input type="radio" name="geslacht" id="vrouw" value="v" onchange="
+        if(document.custform.vrouw.checked == true) {
+            alert('Welkom mevrouw!');
+        }">
+        <input type="submit" id="submit" name="submit"
+            value="Verzenden"
+            onmouseover="style.color='green'"
+            onmouseout="style.color='black'">
+        <form action="mailto: email@adres.nl"
+                    name="custform"
+                methode="post"
+            onsubmit="return(formcheck(this));">
+        </form>
+        <input type="checkbox"
+        name="smatphone"
+        value="s"
+        onchange="
+        if(document.custform.gadget[0].checked)
+        {
+        alert('Smartphone besteld!');
+        }">
+        <select onchange="
+        if(document.custform.bezorging.value == 'express') {
+            getElementById('expres-info').style.display='block';
+            getElementById('dag-info').style.display='none';
+            getElementById('week-info').style.display='none';
+        }"
+        name="bezorging"></select>
+        <br>
+        <div id="expres-info" style="display:none">Express bestelling</div>
+        <div id="dag-info" style="display:none">Dag bestelling</div>
+        <div id="week-info" style="display:none">week bestelling</div>
+        <br>
+        <input required type="password" id="passwoord"
+        placeholder="vul uw wachtwoord in"
+        onkeyup="herhalen()">
+    </div>
+</body>
+</html>
